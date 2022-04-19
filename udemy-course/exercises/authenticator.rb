@@ -6,14 +6,14 @@ users = [
           { username: "heisenberg", password: "password5" }
         ]
 
-def verify_user (username, pw, hash)
+def auth_user (username, pw, hash)
     hash.each do |user|
         if user[:username] == username && user[:password] == pw
-            return p user
+            return user
         end
     end
 
-    puts "Credentials were not correct"
+    "Credentials were not correct"
 end
 
 puts "Welcome to the authenticator"
@@ -30,14 +30,14 @@ while attempt < 3
     print "password: "
     password_input = gets.chomp
 
-    verify_user(username_input, password_input, users)
+    puts auth_user(username_input, password_input, users)
 
     puts "Press n to quit or any other key to continue:"
-    quit = gets.chomp
+    quit = gets.chomp.downcase
 
-    if quit == 'n'
-        attempt = 3
-    else
-        attempt += 1
-    end
+    break if quit == 'n'
+
+    attempt += 1
 end
+
+puts "You have exceeded the number of attempts" if attempt == 3
