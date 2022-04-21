@@ -31,9 +31,16 @@ do arquivo deve ser o mesmo nome do método que será usado no controller"
 'método_http' 'rota', to: 'controller#action'
 "
 
+"Para colocar todos os métodos autimaticamente seguindo o padrão do rails, faz
+
+resource :'nome_do_recurso'
+
+Para selecionar só algumas ações faz
+
+resource :'nome_do_recurso', only: [:'nome da ação']
+"
+
 ################################################################################################
-
-
 
 "rails generate scaffold 'Resource (que vai ser o nome da tabela)' 'coluna1':'tipo_de_dado' 'coluna2':'tipo_de_dado' ... "
 
@@ -45,6 +52,7 @@ de código em routes.rb (que cria as rotas automaticamente), adiciona uma pasta 
 
 rails db:migrate
 
-dessa forma será criado os arquivos schema.rb e seeds.rb na pasta db"
+dessa forma será criado os arquivos schema.rb e seeds.rb na pasta db, esse comando
+só roda arquivos de migração que não foram executados"
 
 
