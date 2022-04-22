@@ -1,0 +1,16 @@
+<% if @food == "" %>
+  <p>Fill the text field</p>
+<%end%>
+
+<%= form_with scope: :list, url: '/create', local: true do |f| %>
+
+  <p>
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

@@ -1,0 +1,10 @@
+<h1> Showing itens from list </h1>
+
+<table>
+  <% @list.each do |row| %>
+    <tr>
+      <td> <%= row[0] %> </td>
+      <td> <%= row[1] %> </td>
+    </tr>
+  <%end%>
+</table>

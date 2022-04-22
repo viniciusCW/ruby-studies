@@ -4,7 +4,7 @@ require 'csv'
 #CSV.read(File.join(File.dirname(__FILE__), 'teste.csv'))
 
 list = CSV.read('C:\Users\vinic\Documents\Programação\Ruby\annotations\csv\teste.csv')
-
+p list
 list.append([6, "potato"])
 
 listMapped = list.map { |row| row.join(",")}.join("\n")

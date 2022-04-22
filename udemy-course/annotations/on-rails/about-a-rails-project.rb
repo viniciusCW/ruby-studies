@@ -31,7 +31,7 @@ do arquivo deve ser o mesmo nome do método que será usado no controller"
 'método_http' 'rota', to: 'controller#action'
 "
 
-"Para colocar todos os métodos autimaticamente seguindo o padrão do rails, faz
+"Para colocar todos os métodos automaticamente seguindo o padrão do rails, faz
 
 resource :'nome_do_recurso'
 
