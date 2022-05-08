@@ -1,4 +1,4 @@
-"Tem q gerar arquivo de migração para cirar uma tabela:
+"Tem q gerar arquivo de migração para criar uma tabela:
 
 rails generate migration create_'nome_da_tabela'
 
