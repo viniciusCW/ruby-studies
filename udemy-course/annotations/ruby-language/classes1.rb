@@ -34,11 +34,11 @@ se chamam 'variável de instância'"
 #   @'nome_do_atributo' = 'argumento'
 # end
 
-"E então para definir o valor de um atributo faz
+"E então para definir o valor de um atributo faz"
 
-'nome_do_objeto'.'atributo' = 'valor do atributo'
+#'nome_do_objeto'.'atributo' = 'valor do atributo'
 
-Um getter é feito como um método sem argumentos"
+"Um getter é feito como um método sem argumentos"
 
 class Name
   @first_name

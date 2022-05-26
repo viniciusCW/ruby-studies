@@ -23,3 +23,8 @@ e 0 quando são iguais
 p 1 <=> 2
 p 1 <=> 1
 p 2 <=> 1
+
+###########################################################################################
+
+"Variáveis constantes são declaradas apenas definindo a primeira letra do nome das constantes
+com letra maiúscula"
