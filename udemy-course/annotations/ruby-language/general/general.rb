@@ -28,3 +28,9 @@ p 2 <=> 1
 
 "Variáveis constantes são declaradas apenas definindo a primeira letra do nome das constantes
 com letra maiúscula"
+
+###########################################################################################
+
+"Ao rodar um código ruby através do terminal, é possível pegar 'opções' no terimal com
+a constante ARGV, as opções passadas serão coletadas por ARGV na forma de array, onde
+cada opção será um elemento do array"
