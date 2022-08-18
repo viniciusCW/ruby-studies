@@ -18,6 +18,8 @@ end
 #Isso é util pro caso da classe sendo descrita ter um "initialize" com argumentos, então pode instanciar a classe
 #com os argumentos que quiser
 
+##############################################################################################################################
+
 #Com o subject, têm-se uma outra variável para poder fazer um "expect" no subject, que é "is_expected", assim dá
 #pra fazer um exemplo inline, ele ainda fornece uma descrição do exemplo automaticamente. Exemplo
 
