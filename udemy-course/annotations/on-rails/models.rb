@@ -18,7 +18,7 @@ Table name: articles -> plural of model name and all lowercase
 "
 ###############################################################################
 
-"No arquivo cirado em db\migrate, vai ter um método no qual podemos colocar o código
+"No arquivo criado em db\migrate, vai ter um método no qual podemos colocar o código
 para a criação de tabelas que poderá ser executado, basta adicionar esse tipo de linha
 
 def change
