@@ -1,0 +1,1 @@
+"O path rails/info/routes exibe as rotas da aplicação e tem busca nas rotas"
