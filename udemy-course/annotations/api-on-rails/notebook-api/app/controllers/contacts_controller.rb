@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all.page(params[:page]) #page e per são métodos do kaminari
 
+    # expires_in 30.seconds, public: true #Cache-Control
     # paginate json: @contacts #paginate é da gem api-pagination
     render json: @contacts
   end
