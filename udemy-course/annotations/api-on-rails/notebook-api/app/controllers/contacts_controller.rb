@@ -3,8 +3,9 @@ class ContactsController < ApplicationController
 
   # GET /contacts
   def index
-    @contacts = Contact.all
+    @contacts = Contact.all.page(params[:page]) #page e per são métodos do kaminari
 
+    # paginate json: @contacts #paginate é da gem api-pagination
     render json: @contacts
   end
 
@@ -20,7 +21,7 @@ class ContactsController < ApplicationController
     if @contact.save
       render json: @contact, include: [:kind, :phones, :address], status: :created, location: @contact
     else
-      render json: @contact.errors, status: :unprocessable_entity
+      render json: ErrorSerializer.serialize(@contact.errors), status: :unprocessable_entity
     end
   end
 

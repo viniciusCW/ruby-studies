@@ -1,10 +1,10 @@
 class ContactSerializer < ActiveModel::Serializer
   attributes :id, :name, :email, :birthdate
 
-  belongs_to :kind do
-    return nil if object.kind
-    link(:related) { contact_kind_url(object.kind) }
-  end
+  # belongs_to :kind do
+  #   # return nil if object.kind
+  #   link(:related) { contact_kind_url(object.kind) }
+  # end
 
   has_many :phones do
     link(:related) { contact_phones_url(object) }
